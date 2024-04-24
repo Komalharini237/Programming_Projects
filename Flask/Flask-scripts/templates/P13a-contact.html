@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+    </head>
+    <body bgcolor="pink">
+        <h2 style="text-align: center;">Contact Form</h2>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                    {% for msg in messages %}
+                    <li>{{ msg }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}        
+
+        <form action="http://127.0.0.1:5000/contact" method="POST">
+           <fieldset>
+            <legend>Contact Form</legend>
+            {{ form.hidden_tag() }}
+
+            <div style="font-size: 20px; font-weight: bold; margin-left: 150px;" >
+            <p>{{ form.name.label }}<br>
+                {{ form.name }}
+                {% for msg in form.name.errors %}
+                    <span style="color: red;">{{ msg }}</span><br>
+                {% endfor %}
+                <br></p>
+
+            <p>{{ form.Gender.label }} {{ form.Gender }}
+                {{ form.Address.label }}<br>
+                {{ form.Address }}
+                <br></p>
+
+            <p>{{ form.email.label }}<br>
+                {{ form.email }}
+                {% for msg in form.email.errors %}
+                    <span style="color: red;">{{ msg }}</span><br>
+                {% endfor %}
+                <br></p>
+
+            <p>{{ form.Age.label }}<br>
+                {{ form.Age }}
+                <br></p>
+
+            <p>{{ form.language.label }}<br>
+                {{ form.language }}
+                <br></p>
+            <p>{{ form.submit() }}</p>
+            </div>
+           </fieldset>
+        </form>
+        
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>New Record</title>
+    </head>
+    <body>
+        <h3>Office - Flask SQLAlchemy example</h3>
+        </div>
+        <hr/>
+        {%- for category, message in get_flashed_messages(with_categories=true) %}
+        <div class="alert alert-danger"> {{ message }}</div>
+        {%- endfor %}
+        
+        <form action="{{ url_for('add_record') }}" method="post">
+            <label for="office_id">Office ID</label><br>
+            <input type="text" name="office_id" placeholder="Office ID"><br>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" placeholder="Name"><br>
+            <label for="city">City</label><br>
+            <input type="text" name="city" placeholder="city"><br>
+            <label for="add">add</label><br>
+            <textarea name="add" placeholder="add"></textarea><br>
+            <label for="State">State</label><br>
+            <input type="text" name="state" placeholder="State"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

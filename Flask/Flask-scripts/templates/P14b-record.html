@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Register New Record</title>
+    </head>
+    <body>
+        <form action=" {{ url_for('add_record') }} " method="POST">
+            <h3>Office Information</h3>
+            Office ID<br>
+            <input type="text" name="office_id" /></br>
+            Address<br>
+            <textarea name="address"></textarea></br>
+            City<br>
+            <input type="text" name="city" /></br>
+            State<br>
+            <input type="text" name="state" /></br>
+
+            <input type="submit" value="submit" /></br>
+        </form>
+        
+    </body>
+</html>

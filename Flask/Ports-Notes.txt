@@ -1,0 +1,23 @@
+The port number is a way to identify different services running on the same host or server. When you access a website, your web browser communicates with the server over a specific port number. Here are some commonly used port numbers and their typical purposes:
+
+Port 80: This is the default port for HTTP (Hypertext Transfer Protocol) traffic. When you enter a URL without specifying a port number (e.g., http://example.com), your browser assumes port 80 by default.
+
+Port 443: This is the default port for HTTPS (HTTP Secure) traffic. HTTPS is the secure version of HTTP, and it encrypts data exchanged between the client (browser) and the server. URLs with "https://" prefix use port 443 by default.
+
+Port 8080: This is a common alternative port for HTTP traffic. It is often used during development or testing to avoid conflicts with services running on port 80.
+
+Port 25: This is the default port for SMTP (Simple Mail Transfer Protocol), which is used for sending emails. SMTP servers listen on port 25 for incoming email messages.
+
+Port 587: This is another common port for SMTP, often used for email submission by email clients (e.g., Outlook, Thunderbird). Port 587 requires authentication and encryption, making it more secure than port 25.
+
+Port 3306: This is the default port for MySQL database server. MySQL clients connect to the server using port 3306 to perform database operations.
+
+Port 5432: This is the default port for PostgreSQL database server. PostgreSQL clients connect to the server using port 5432 to perform database operations.
+
+Note:
+Port 465 was historically used for SMTPS (SMTP over SSL/TLS), but it's now deprecated.
+It's not recommended to use port 465 for new implementations.
+The industry standard for secure email transmission is to use STARTTLS on port 587 for SMTP submission.
+Port 587 with STARTTLS provides a more flexible and secure method for email transmission compared to the deprecated SMTPS protocol on port 465.
+
+The choice of port number can impact the accessibility and security of your services. Some ports are well-known and commonly used for specific purposes (e.g., HTTP on port 80), while others are used for alternative configurations or specialized services. Using non-standard ports (ports other than 80 for HTTP or 443 for HTTPS) can sometimes help in avoiding conflicts or bypassing network restrictions, but it may also require users to specify the port explicitly in the URL, which can be less user-friendly. Additionally, some ports are reserved for system services and require administrative privileges to use. It's important to choose ports carefully and consider the implications for accessibility, security, and ease of use.

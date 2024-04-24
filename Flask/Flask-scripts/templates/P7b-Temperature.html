@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Flask Request from Object-Temperature</title>
+    </head>
+    <body bgcolor="yellow">
+        <table border = "5">
+            
+            {% for key, value in temperature.items() %}
+
+                <tr>
+                    <th> {{ key }} </th>
+                    <td> {{ value }} </td>
+                </tr>
+                
+            {% endfor %}
+        </table>
+</body>
+</html>

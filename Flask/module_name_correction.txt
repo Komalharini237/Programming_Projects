@@ -1,0 +1,6 @@
+If your script name contains a hyphen ("-") and you want to import a class from it dynamically, 
+you'll need to follow a specific approach due to Python's import restrictions on module names containing hyphens.
+In simpler terms:
+1. We're creating a specification (a set of instructions) that tells Python where to find and how to load a module named "Part_13a_WTFExtension". We're saying that the module is located in a file named "Part-13a-WTFExtension.py".
+2. We're creating an empty container (like a box) that will hold all the things from the module once it's loaded. We're calling this container "module".
+3. We're loading and running all the code from the module file according to the instructions in the specification. This fills up our empty container with all the stuff (variables, functions, classes) defined in the module file. Now, we can use those things from the module in our program.

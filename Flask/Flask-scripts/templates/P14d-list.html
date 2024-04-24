@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>List</title>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <td><h3>Office_ID</h3></td>
+                <td><h3>Address</h3></td>
+                <td><h3>City</h3></td>
+                <td><h3>State</h3></td>
+            </thead>
+        {% for row in rows %}
+        <tr>
+            <td><h3>{{row["office_id"]}}</h3></td>
+            <td><h3>{{row["address"]}}</h3></td>
+            <td><h3>{{row["city"]}}</h3></td>
+            <td><h3>{{row["state"]}}</h3></td>
+        </tr>
+        {% endfor %}
+        </table>
+        <a href="/">Go back to homepage</a>
+    </body>
+</html>

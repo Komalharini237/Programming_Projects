@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <title>Table</title>    
+</head>
+
+<body bgcolor="fuchsia">
+    <h1>HTML Tables</h1>
+    <table border="5" bgcolor="tan" width="500px" cellpadding="5" cellspacing="5">
+        <!--tr: table row; th: table heading; td: table data-->
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>Row1, Column1</td>
+            <td>Row1, Column2</td>
+        </tr>
+        <tr>
+            <td>Row2, Column1</td>
+            <td>Row2, Column2</td>
+        </tr>
+        <tr>
+            <td>Regina</td>
+            <td>Mills</td>
+        </tr>
+        <tr>
+            <td>Snow</td>
+            <td>White</td>
+        </tr>
+    </table>
+    <hr/>
+    <table border="5" background="Image.png" width="500px" cellpadding="5" cellspacing="5">
+        <caption>This is merging cells example:</caption>
+        <thead >
+            <tr>
+                <td colspan="3">This is the table header.</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">This is the table footer.</td>
+            </tr>
+        </tfoot>
+        <tr>
+            <td rowspan="2">Row1, Column1</td>
+            <td colspan="2">Row1, Column2</td>
+        </tr>
+        <tr>
+            <td>Row2, Column2</td>
+            <td>Row2, Column3</td>
+        </tr>
+        <tr>
+            <td>Row3, Column1</td>
+            <td>Row3, Column2</td>
+            <td>Row3, Column3</td>
+        </tr>
+        <tr>
+            <td>Row4, Column1</td>
+            <td>Row4, Column2</td>
+            <td>Row4, Column3</td>
+        </tr>
+    </table>
+</body>
+
+</html>
